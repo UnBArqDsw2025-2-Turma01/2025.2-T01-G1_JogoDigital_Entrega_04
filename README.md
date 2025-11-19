@@ -8,18 +8,17 @@ Este repositório traz um template de repo de documentação a ser seguido pelos
 
 ## Tecnologia
 
-A geração do site estático é realizada utilizando o [docsify](https://docsify.js.org/).
+A geração do site estático é realizada utilizando o [MkDocs](https://www.mkdocs.org/) com o tema [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+
+MkDocs é um gerador de sites estáticos rápido e simples, voltado para documentação de projetos. Os arquivos de origem são escritos em Markdown e configurados com um único arquivo de configuração YAML.
+
+### Instalando o MkDocs
+
+Execute os comandos:
 
 ```shell
-"Docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. To start using it, all you need to do is create an index.html and deploy it on GitHub Pages."
-```
-
-### Instalando o docsify
-
-Execute o comando:
-
-```shell
-npm i docsify-cli -g
+pip install mkdocs
+pip install mkdocs-material
 ```
 
 ### Executando localmente
@@ -27,5 +26,19 @@ npm i docsify-cli -g
 Para iniciar o site localmente, utilize o comando:
 
 ```shell
-docsify serve ./docs
+mkdocs serve
+```
+
+O site estará disponível em `http://127.0.0.1:8000/`
+
+### Deploy para GitHub Pages
+
+O deploy é automatizado via GitHub Actions. Toda vez que você fizer push para a branch `main`, o site será atualizado automaticamente.
+
+**Site publicado em:** https://unbarqdsw2025-2-turma01.github.io/2025.2-T01-G1_JogoDigital_Entrega_04/
+
+Para fazer deploy manual:
+
+```shell
+mkdocs gh-deploy
 ```

@@ -1,0 +1,58 @@
+site_name: Jogo Digital - Grupo 1
+site_url: https://unbarqdsw2025-2-turma01.github.io/2025.2-T01-G1_JogoDigital_Entrega_04/
+
+repo_url: https://unbarqdsw2025-2-turma01.github.io/2025.2-T01-G1_JogoDigital_Entrega_04/
+repo_name: GitHub
+
+extra:
+ social:
+   - icon: fontawesome/brands/github
+     link: https://unbarqdsw2025-2-turma01.github.io/2025.2-T01-G1_JogoDigital_Entrega_04/
+
+theme:
+ name: material
+ palette:
+
+   # Palette toggle for automatic mode
+   - media: "(prefers-color-scheme)"
+     toggle:
+       icon: material/brightness-auto
+       name: Switch to light mode
+
+   # Palette toggle for light mode
+   - media: "(prefers-color-scheme: light)"
+     scheme: default 
+     primary: green
+     accent: pink 
+     toggle:
+       icon: material/brightness-7
+       name: Switch to dark mode
+
+   # Palette toggle for dark mode
+   - media: "(prefers-color-scheme: dark)"
+     scheme: slate
+     primary: green
+     toggle:
+       icon: material/brightness-4
+       name: Switch to system preference
+
+ features:
+   - navigation.tabs
+   - content.code.copy
+   - navigation.instant
+   - navigation.instant.progress
+   - navigation.top
+
+nav:
+  - Apresentação: index.md
+  - Projeto: Projeto/Projeto.md
+  - 4. Arquitetura e Reutilização:
+      - 4. Arquitetura e Reutilização Geral: ArquiteturaReutilizacao/4.ArquiteturaReutilizacao.md
+      - 4.1. DAS: ArquiteturaReutilizacao/4.1.DAS.md
+      - 4.2. Reutilização de Software: ArquiteturaReutilizacao/4.2.ReutilizacaoDeSoftware.md
+      - 4.3. Participações - Arquitetura e Reutilização: ArquiteturaReutilizacao/4.3.ParticipacoesArqReutilizacao.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
